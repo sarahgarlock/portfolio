@@ -123,6 +123,7 @@ nav ul li {
   padding: 0.3rem 0;
 }
 
+/* More About Me */
 .more-about {
   background-color: var(--bg-color);
   padding: 1rem 6rem;
@@ -136,4 +137,27 @@ nav ul li {
 .more-about p {
   line-height: var(--line-height);
   padding: 0.4rem;
+}
+
+/* Skills */
+
+.skills {
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.skill-header {
+  margin-bottom: 1rem;
+  font-size: 45px;
+}
+
+.skills-wrapper img {
+  padding: 1.25rem;
+}
+
+.icon {
+  width: 11.875rem;
+  height: 11.25rem;
 }
