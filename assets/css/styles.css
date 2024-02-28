@@ -224,3 +224,25 @@ nav ul li {
   padding: 20px;
   margin: 10px;
 }
+
+/* Music */
+
+.songs {
+  display: flex;
+  justify-content: space-around; /* Center items horizontally */
+}
+
+.song {
+  text-align: center; /* Center text within the song div */
+}
+
+iframe {
+  display: block;
+  margin: 0 auto; /* Center iframe horizontally */
+}
+
+.song-title {
+  margin-bottom: 10px; /* Add some space between title and iframe */
+}
+
+
