@@ -27,6 +27,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <title>Sarah Garlock | Web Developer + Musican</title>
+    <link rel="icon" type="image/x-con" href="assets/icons/speaker.png">
   </head>
 
   <body>
@@ -301,35 +302,61 @@
     <div class="socials">
       <a href="https://www.instagram.com/sarg_makes_beats/" target="_blank"
         ><img
-          src="assets/icons/instagram.png"
+          src="assets/icons/instagram.gif"
           alt="Instagram"
           loading="lazy"
           class="socicon"
       /></a>
       <a href="https://www.tiktok.com/@sarg_makes_beats" target="_blank"
         ><img
-          src="assets/icons/tiktok.png"
+          src="assets/icons/tiktok.gif"
           alt="Tiktok"
           loading="lazy"
           class="socicon"
       /></a>
       <a href="https://www.linkedin.com/in/sarah-garlock/" target="_blank"
         ><img
-          src="assets/icons/linkedin.png"
+          src="assets/icons/linkedin.gif"
           alt="Linkedin"
           loading="lazy"
           class="socicon"
       /></a>
       <a href="https://github.com/sarahgarlock" target="_blank"
-        ><img src="assets/icons/github.png" 
+        ><img src="assets/icons/github.gif" 
               alt="Github" 
               class="socicon"
       /></a>
-      <hr>
-
+    </div>
     <!-- Scroll to top -->
 
+    <i class="scroll-up" id="scroll-up"
+      ><img
+        src="assets/icons/uparrow.gif"
+        class="socicon up-arrow"
+        alt="scroll-up"
+      /></i>
+      <script>
+        
+        // scroll to top functionality
+        const scrollUp = document.querySelector("#scroll-up");
+
+        scrollUp.addEventListener("click", () => {
+          window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth",
+          });
+        });
+    </script>
+
     <!-- Footer section -->
+
+    <footer>
+      <p class="copy">&copy; Copyright 2024</p>
+      <p class="copy">
+        Built with &#x2661; by Sarah Garlock (Sarg)
+      </p>
+    </footer>
 
     <!-- Website scripts -->
     <script src="assets/js/app.js"></script>
