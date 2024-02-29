@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
-
+@media screen and (max-width: 720px) {
+  /*changes reflects on screen with a width of 720px and below*/
+}
 
 /* Variables */
 :root {
@@ -44,6 +46,7 @@ a:hover {
 }
 
 /* Navigation Styles */
+
 nav {
   position: sticky;
   top: 0;
@@ -310,6 +313,8 @@ iframe {
   cursor: pointer;
 }
 
+/* Socials */
+
 .socials {
   display: flex;
   flex-direction: column;
@@ -321,4 +326,27 @@ iframe {
 .socicon {
   width: 2rem;
   height: 2rem;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--bg-color);
+  padding: 1.25rem;
+  text-align: center;
+  margin: 2rem 0 0;
+}
+
+/* Scroll */
+
+.scroll-up {
+  position: fixed;
+  right: 0.5%;
+  bottom: 3%;
+  cursor: pointer;
+}
+
+.up-arrow {
+  width: 3rem;
+  height: 3rem;
 }
