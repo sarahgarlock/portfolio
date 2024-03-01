@@ -4,6 +4,7 @@
 }
 
 /* Variables */
+
 :root {
   --font-family: Copperplate, Papyrus, fantasy;
   --normal-font: 400;
@@ -21,13 +22,14 @@
 }
 
 hr {
-  border: none; /* Remove the default border */
-  border-top: 2px solid rgb(60, 222, 237); /* Add a custom border */
-  margin: 2rem auto; /* Center the <hr> element and add space around it */
-  width: 80%; /* Set the width of the <hr> element */
+  border: none; 
+  border-top: 2px solid rgb(60, 222, 237); 
+  margin: 2rem auto; 
+  width: 80%;
 }
 
 /* Resets */
+
 * {
   margin: 0;
   padding: 0;
@@ -35,6 +37,7 @@ hr {
 }
 
 /* Base Styles */
+
 html {
   scroll-behavior: smooth;
 }
@@ -83,25 +86,42 @@ nav a:hover {
 }
 
 nav ul {
-  list-style-type: none; /* Remove bullet points from the list */
+  list-style-type: none;
   display: flex;
   gap: 1.9rem;
   position: fixed;
-  background-color: #4cb3b797;
+  background-color: #6ea9abde;
   flex-direction: column;
-  top: 86px;
-  right: 10%; /* Change left to right */
-  width: 80%;
+  top: 85px;
+  right: 10%;
+  width: 100%;
   text-align: center;
   transform: translateX(120%);
-  transition: transform 0.5s ease-in, width 0.5s ease-in;
+  transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
+  border: black;
+  padding: 1rem;
+
+}
+
+nav ul.show {
+  transform: translateX(0);
+  width: 20%; /* Set the width of the open menu */
 }
 
 nav ul li {
   font-weight: var(--bold-font);
 }
 
-/* Burger Menu */
+nav ul li a {
+  font-size: 1rem; /* Set the default font size */
+  transition: font-size 0.3s; /* Add a transition for smoother animation */
+}
+
+nav ul li a:hover {
+  font-size: 1.3rem; /* Increase the font size on hover */
+}
+
+
 .burger-menu {
   color: black;
   font-size: 2rem;
@@ -109,15 +129,8 @@ nav ul li {
   background-color: transparent;
   cursor: pointer;
   position: absolute;
-  top: 1rem; /* Adjust the top position as needed */
-  right: 1rem; /* Adjust the right position as needed */
-}
-
-nav ul.show {
-  transform: translateX(0);
-  width: 30%;
-  right: 1rem; /* Ensure the menu stays on the right */
-  top: 5rem; /* Adjust the top position to align with the top of the nav */
+  top: 1rem;
+  right: 1rem;
 }
 
 /* Hero */
@@ -159,7 +172,7 @@ nav ul.show {
 
 /* More About Me */
 .more-about {
-  background-color: var(--bg-color);
+  background-color: rgba(128, 128, 128, 0.442);
   padding: 1rem 6rem;
 }
 
