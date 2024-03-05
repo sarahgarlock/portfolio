@@ -44,6 +44,8 @@ html {
 
 body {
   font-family: var(--font-family);
+  background-color: rgba(128, 128, 128, 0.347);
+
 }
 
 a {
@@ -90,7 +92,7 @@ nav ul {
   display: flex;
   gap: 1.9rem;
   position: fixed;
-  background-color: #6ea9abde;
+  background-color: #4cb4b7db;
   flex-direction: column;
   top: 85px;
   right: 10%;
@@ -172,8 +174,12 @@ nav ul li a:hover {
 
 /* More About Me */
 
+#more-about {
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+
 .more-about {
-  background-color: rgba(128, 128, 128, 0.347);
   padding: 1rem 6rem;
 }
 
@@ -190,8 +196,17 @@ nav ul li a:hover {
 
 /* Skills */
 
+#skills-tech {
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+
+#skills-music {
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+
 .skills {
-  background-color: rgba(128, 128, 128, 0.347);
   margin: auto;
   text-align: center;
   margin-top: 2.5rem;
@@ -230,11 +245,14 @@ nav ul li a:hover {
 
 /* Projects */
 
+#projects {
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+
 .projects {
-  background-color: var(--bg-color);
   padding: 32px 0;
   margin-top: 2rem;
-  background-color: rgba(128, 128, 128, 0.347);
 }
 
 .project-pic {
@@ -251,6 +269,7 @@ nav ul li a:hover {
 .projects-title {
   text-align: center;
   margin-bottom: 1rem;
+  font-size: 3rem;
 }
 
 .project-container {
@@ -277,48 +296,96 @@ nav ul li a:hover {
   box-shadow: 0 3px 10px var(--primary-shadow);
   padding: 20px;
   margin: 10px;
-  transition: transform 0.3s, background-color 0.3s; /* Add transition for smoother animation */
+  transition: transform 0.3s, background-color 0.3s;
 }
 
 .project-card:hover {
-  transform: scale(1.05); /* Scale the card slightly on hover */
-  background-color: #f3c176; /* Change the background color on hover */
+  transform: scale(1.05);
+  background-color: #f3c176;
 }
 
 /* Music */
 
-.songs {
-  display: flex;
-  justify-content: space-around;
+#audio-section {
+  padding-top: 85px;
+  padding-bottom: 85px;
 }
 
-.my-songs {
-  background-color: rgba(128, 128, 128, 0.347);
-  padding: 1rem;
+.music-title {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 20px;
+  padding: 2rem;
+  font-size: 3rem;
 }
 
-.song {
+/* Section styles */
+
+.section-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
   text-align: center;
 }
 
-iframe {
-  display: block;
-  margin: 0 auto;
-  padding: 20px;
+/* Audio */
+
+.audio-section {
+
 }
 
-.song-title {
-  margin-bottom: 10px;
+.audio-recordings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.audio-recording {
+  margin: 10px auto;
+  padding: 10px;
+}
+
+/* Video */
+
+.video-section {
+  justify-content: center;
+}
+
+.video-recordings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.video-recording {
+  margin: 10px auto;
+  padding: 10px;
+}
+
+/* Responsive layout */
+
+@media (max-width: 768px) {
+  .audio-recording,
+  .video-recording {
+    width: 100%;
+  }
 }
 
 /* Games */
 
+#games {
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+
 .my-games {
   text-align: center;
   padding: 2rem;
-  background-color: rgba(128, 128, 128, 0.347);
 }
 
+.my-games h2 {
+
+  font-size: 3rem;
+}
 .my-games p {
   margin-top: 1rem;
 }
@@ -329,7 +396,6 @@ iframe {
 .contact {
   margin-top: 2rem;
   padding-bottom: 3rem;
-  background-color: rgba(128, 128, 128, 0.347);
 }
 
 .contact h2 {
