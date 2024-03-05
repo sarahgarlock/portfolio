@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 420px) {
   /*changes reflects on screen with a width of 720px and below*/
 }
 
@@ -70,11 +70,12 @@ nav {
   padding: 1.5rem 3.5rem;
   background-color: #4cb4b7db;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
 }
 
 nav h1 {
   color: black;
-  font-size: 32px;
+  font-size: 24px;
 }
 
 nav a {
