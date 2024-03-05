@@ -6,7 +6,7 @@
 /* Variables */
 
 :root {
-  --font-family: Copperplate, Papyrus, fantasy;
+  --font-family: 'Raleway', sans-serif;
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
@@ -237,8 +237,92 @@ nav ul li a:hover {
   display: inline-block;
 }
 
-.icon-card:hover {
+/* .icon-card:hover {
   background-color: #f3c176;
+  box-shadow: 0 10px 30px var(--primary-shadow);
+  transform: scale(1.05);
+} */
+
+.icon-card.ruby:hover {
+  background-color: rgba(255, 60, 60, 0.764);
+  box-shadow: 0 10px 30px var(--primary-shadow);
+  transform: scale(1.05);
+}
+
+.icon-card.rails:hover {
+  background-color: rgba(189, 28, 28, 0.725);
+  box-shadow: 0 10px 30px var(--primary-shadow);
+  transform: scale(1.05);
+}
+
+.icon-card.python:hover {
+  background-color: rgba(245, 245, 78, 0.86); 
+  box-shadow: 0 10px 30px var(--primary-shadow);
+  transform: scale(1.05);
+}
+
+.icon-card.sql:hover {
+  background-color: rgba(133, 201, 238, 0.821); 
+  box-shadow: 0 10px 30px var(--primary-shadow);
+  transform: scale(1.05);
+}
+
+.icon-card.js:hover {
+  background-color: rgba(232, 232, 21, 0.853); 
+  box-shadow: 0 10px 30px var(--primary-shadow);
+  transform: scale(1.05);
+}
+
+.icon-card.css:hover {
+  background-color: rgba(80, 113, 222, 0.853); 
+  box-shadow: 0 10px 30px var(--primary-shadow);
+  transform: scale(1.05);
+}
+
+.icon-card.html:hover {
+  background-color: rgba(245, 159, 78, 0.86); 
+  box-shadow: 0 10px 30px var(--primary-shadow);
+  transform: scale(1.05);
+}
+
+.icon-card.postman:hover {
+  background-color: rgba(255, 115, 0, 0.761); 
+  box-shadow: 0 10px 30px var(--primary-shadow);
+  transform: scale(1.05);
+}
+
+.icon-card.ableton:hover {
+  background-color: rgba(187, 187, 59, 0.86);
+  box-shadow: 0 10px 30px var(--primary-shadow);
+  transform: scale(1.05);
+}
+
+.icon-card.electric:hover {
+  background-color: rgba(172, 88, 228, 0.645); 
+  box-shadow: 0 10px 30px var(--primary-shadow);
+  transform: scale(1.05);
+}
+
+.icon-card.acoustic:hover {
+  background-color: rgba(123, 75, 27, 0.853);
+  box-shadow: 0 10px 30px var(--primary-shadow);
+  transform: scale(1.05);
+}
+
+.icon-card.drums:hover {
+  background-color: rgba(45, 238, 238, 0.853);
+  box-shadow: 0 10px 30px var(--primary-shadow);
+  transform: scale(1.05);
+}
+
+.icon-card.piano:hover {
+  background-color: rgba(114, 114, 240, 0.653);
+  box-shadow: 0 10px 30px var(--primary-shadow);
+  transform: scale(1.05);
+}
+
+.icon-card.banjo:hover {
+  background-color: rgb(155, 155, 155);
   box-shadow: 0 10px 30px var(--primary-shadow);
   transform: scale(1.05);
 }
@@ -322,16 +406,12 @@ nav ul li a:hover {
 /* Section styles */
 
 .section-title {
-  font-size: 1.5em;
+  font-size: 2em;
   margin-bottom: 10px;
   text-align: center;
 }
 
 /* Audio */
-
-.audio-section {
-
-}
 
 .audio-recordings {
   display: flex;
@@ -471,6 +551,10 @@ nav ul li a:hover {
 .socicon {
   width: 2rem;
   height: 2rem;
+}
+
+.socicon:hover {
+  transform: scale(1.5);
 }
 
 /* Footer */
