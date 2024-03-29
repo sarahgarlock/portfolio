@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N6487EN2EN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-N6487EN2EN');
+    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -83,22 +91,28 @@
     <!-- More about -->
     <section class="more-about" id="more-about">
       <h2>More About Me</h2>
-      <p>
-        Hey there, I'm Sarah, a tech enthusiast with a passion for music. After graduating from Turing School for Software and Design, where I dived into back-end programming using languages like Ruby, Rails, SQL, and API integration, I'm now all set to kickstart my tech journey. The seven-month program was intense, but it equipped me with the skills for my first tech role. I particularly enjoy playing around with data and creating visualizations that tell compelling stories.
-      </p>
-      <br>
-      <p>
-      On the flip side, music has always been a huge part of my life. I'm a self-taught drummer and guitarist, and I even scored a music scholarship to Bethany College in Lindsborg, KS. There, I honed my skills in music theory and instrumentation while rocking out with various ensembles. One of my proudest moments was performing my Senior Recital on a whopping 10 different percussion instruments!
-      </p>
-      <br>
-      <p>
-      When I'm not coding or jamming, you can find me teaching music at <a href="https://www.mountainsidemusicacademy.com/">Mountainside Music Academy</a>. I love sharing my passion for music with others and helping them discover the joy of playing an instrument. Currently, I'm diving into the world of music production with Ableton Live, exploring new sounds, and pushing my creative boundaries.
-      </p>
-      <br>
-      <p>
-      I'm on the lookout for a company with a meaningful mission that values mentorship and growth. If you're looking for someone who can code up a storm and rock out on stage, I might just be the perfect fit for your team!
-      </p>
+      <div class="headshot">
+        <img src="assets/images/headshot.jpg" alt="Headshot">
+      </div>
+      <div class="about-text">
+        <p>
+          Hey there, I'm Sarah, a tech enthusiast with a passion for music. After graduating from Turing School for Software and Design, where I dived into back-end programming using languages like Ruby, Rails, SQL, and API integration, I'm now all set to kickstart my tech journey. The seven-month program was intense, but it equipped me with the skills for my first tech role. I particularly enjoy playing around with data and creating visualizations that tell compelling stories.
+        </p>
+        <br>
+        <p>
+        On the flip side, music has always been a huge part of my life. I'm a self-taught drummer and guitarist, and I even scored a music scholarship to Bethany College in Lindsborg, KS. There, I honed my skills in music theory and instrumentation while rocking out with various ensembles. One of my proudest moments was performing my Senior Recital on a whopping 10 different percussion instruments!
+        </p>
+        <br>
+        <p>
+        When I'm not coding or jamming, you can find me teaching music at <a href="https://www.mountainsidemusicacademy.com/">Mountainside Music Academy</a>. I love sharing my passion for music with others and helping them discover the joy of playing an instrument. Currently, I'm diving into the world of music production with Ableton Live, exploring new sounds, and pushing my creative boundaries.
+        </p>
+        <br>
+        <p>
+        I'm on the lookout for a company with a meaningful mission that values mentorship and growth. If you're looking for someone who can code up a storm and rock out on stage, I might just be the perfect fit for your team!
+        </p>
+      </div>
     </section>
+    
     <hr>
     <!-- Skills section -->
     <section class="skills" id="skills-tech">
@@ -286,8 +300,39 @@
     <hr>
     <!-- Games -->
     <section class="my-games">
-    <h2 class="games" id="games">Games</h2>
-      <p>Games Coming Soon!</p>
+    <h2 class="games" id="games">Games made with JavaScript</h2>
+    <p>Classic Tic Tac Toe</p>
+      <div class="board">
+        <div class="cell" onclick="handleMove(0, 0)"></div>
+        <div class="cell" onclick="handleMove(0, 1)"></div>
+        <div class="cell" onclick="handleMove(0, 2)"></div>
+        <div class="cell" onclick="handleMove(1, 0)"></div>
+        <div class="cell" onclick="handleMove(1, 1)"></div>
+        <div class="cell" onclick="handleMove(1, 2)"></div>
+        <div class="cell" onclick="handleMove(2, 0)"></div>
+        <div class="cell" onclick="handleMove(2, 1)"></div>
+        <div class="cell" onclick="handleMove(2, 2)"></div>
+      </div>
+      <script src="tictactoe.js"></script>
+
+    </section>
+    <hr>
+    <!-- Art Projects -->
+    <section class="my-art-projects">
+    <h2 class="art" id="art">Art made with JavaScript</h2>
+      <p>Showcasing my JavaScript skills by making art! </p>
+      <canvas id="box1" width="320" height="320"></canvas>
+      <canvas id="box2" width="320" height="320"></canvas>    
+      <canvas id="box3" width="320" height="320"></canvas>    
+      <canvas id="box4" width="320" height="320"></canvas>    
+      <canvas id="box5" width="320" height="320"></canvas>    
+      <canvas id="box6" width="320" height="320"></canvas>    
+      <canvas id="box7" width="320" height="320"></canvas>    
+      <canvas id="box8" width="320" height="320"></canvas>    
+      <canvas id="box9" width="320" height="320"></canvas>    
+      <canvas id="box10" width="320" height="320"></canvas>    
+      <canvas id="box11" width="320" height="320"></canvas>    
+      <script src="boxes.js"></script>  </body>
 
     </section>
     <hr>

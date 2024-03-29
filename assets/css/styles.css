@@ -195,6 +195,15 @@ nav ul li a:hover {
   padding: 0.4rem;
 }
 
+.headshot img {
+  max-width: 30%;
+  height: auto;
+  float: right;
+  border: 3px solid #333; /* Add a border with a color of your choice */
+  border-radius: 50%; /* Optional: Round the corners for a circular shape */
+  margin-left: 10px; /* Add some left margin for spacing */
+}
+
 /* Skills */
 
 #skills-tech {
@@ -237,12 +246,6 @@ nav ul li a:hover {
   position: relative;
   display: inline-block;
 }
-
-/* .icon-card:hover {
-  background-color: #f3c176;
-  box-shadow: 0 10px 30px var(--primary-shadow);
-  transform: scale(1.05);
-} */
 
 .icon-card.ruby:hover {
   background-color: rgba(255, 60, 60, 0.764);
@@ -453,6 +456,7 @@ nav ul li a:hover {
 
 /* Games */
 
+/* Add your CSS styles here */
 #games {
   padding-top: 85px;
   padding-bottom: 85px;
@@ -463,12 +467,56 @@ nav ul li a:hover {
   padding: 2rem;
 }
 
+.my-games p {
+  padding: 2rem;
+}
+
 .my-games h2 {
+  font-size: 3rem;
+}
+
+.my-games p {
+  margin-top: 1rem;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  width: auto;
+  border: 1px solid black;
+  font-size: 2em;
+  background-color: rgba(231, 237, 60, 0.4);
+  background-color: rgb(60, 222, 237, .4);
+}
+
+
+/* Art Projects */
+
+#art {
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+
+.my-art-projects {
+  text-align: center;
+  padding: 2rem;
+}
+
+.my-art-projects h2 {
 
   font-size: 3rem;
 }
-.my-games p {
+.my-art-projects p {
   margin-top: 1rem;
+  padding: 2rem;
 }
 
 
