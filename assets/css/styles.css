@@ -164,6 +164,11 @@ nav ul li a:hover {
   max-width: 30vw;
 }
 
+.bio:hover {
+  background-color: rgba(215, 215, 215, 0.798);
+  box-shadow: 0 10px 30px var(--primary-shadow);
+}
+
 .bio h2 {
   margin-bottom: 1rem;
 }
@@ -443,6 +448,12 @@ nav ul li a:hover {
 .video-recording {
   margin: 10px auto;
   padding: 10px;
+  text-align: center;
+}
+
+.video-recording p {
+  text-align: center;
+  padding: 2rem;
 }
 
 /* Responsive layout */
