@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N6487EN2EN"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-N6487EN2EN');
-    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -57,13 +49,10 @@
       const burger = document.querySelector("#burger-menu");
       const ul = document.querySelector("nav ul");
       const nav = document.querySelector("nav");
-
       burger.addEventListener("click", () => {
         ul.classList.toggle("show");
       });
-
       const navLink = document.querySelectorAll(".nav-link");
-
       navLink.forEach((link) =>
         link.addEventListener("click", () => {
           ul.classList.remove("show");
@@ -112,7 +101,6 @@
         </p>
       </div>
     </section>
-    
     <hr>
     <!-- Skills section -->
     <section class="skills" id="skills-tech">
@@ -319,7 +307,6 @@
         <div class="cell" onclick="handleMove(2, 2)"></div>
       </div>
       <script src="tictactoe.js"></script>
-
     </section>
     <hr>
     <!-- Art Projects -->
@@ -338,7 +325,6 @@
       <canvas id="box10" width="320" height="320"></canvas>    
       <canvas id="box11" width="320" height="320"></canvas>    
       <script src="boxes.js"></script>  </body>
-
     </section>
     <hr>
     <!-- Contact section -->

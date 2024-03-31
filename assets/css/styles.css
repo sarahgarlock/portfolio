@@ -196,17 +196,25 @@ nav ul li a:hover {
 }
 
 .more-about p {
+  background-color: #4cb4b72b;
   line-height: var(--line-height);
   padding: 0.4rem;
+  box-shadow: 0 10px 30px var(--primary-shadow);
+}
+
+.more-about p:hover {
+  background-color: rgba(215, 215, 215, 0.798);
+  box-shadow: 0 10px 30px var(--primary-shadow);
 }
 
 .headshot img {
   max-width: 30%;
   height: auto;
   float: right;
-  border: 3px solid #333; /* Add a border with a color of your choice */
-  border-radius: 50%; /* Optional: Round the corners for a circular shape */
-  margin-left: 10px; /* Add some left margin for spacing */
+  border: 3px solid #333;
+  border-radius: 50%;
+  margin-left: 10px;
+  box-shadow: 0 10px 30px var(--primary-shadow);
 }
 
 /* Skills */
