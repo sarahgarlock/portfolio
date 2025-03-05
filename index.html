@@ -327,6 +327,55 @@
       <script src="boxes.js"></script>
     </section>
     <hr>
+    <main id="container">
+      <h1 id="h1QuickTip">Quick Tip</h1>
+      <section class="sectionQuickTip">
+        <div class="bill">
+          <label for="yourBill">Bill</label>
+          <input type="number" placeholder="Your Bill" id="yourBill" />
+        </div>
+        <div>
+          <div class="space-between">
+            <label for="Select Tip">Select Tip</label>
+            <span id="tipPercent"></span>
+          </div>
+          <input type="range" value="0" id="tipInput" class="range"/>
+        </div>
+        <div class="space-between">
+          <span>Tip</span>
+          <span id="tipValue"></span>
+        </div>
+        <hr id="quickHR">
+        <div class="space-between total">
+          <span>Total</span>
+          <span id="totalWithTip"></span>
+        </div>
+      </section>
+
+      <section class="sectionQuickTip">
+        <div>
+          <div class="space-between">
+            <label for="">Split</label>
+            <span id="splitValue"></span>
+          </div>
+          <input type="range" min="1" max="10" value="1" id="splitInput" class="range">
+        </div>
+        <div class="space-between">
+          <span>Bill Each</span>
+          <span id="billEach"></span>
+        </div>
+        <div class="space-between">
+          <span>Tip Each</span>
+          <span id="tipEach"></span>
+        </div>
+      </section>
+    </main>
+    <hr>
+
+
+
+
+
     <!-- Contact section -->
     <section class="contact" id="contact">
       <h2>Get In Touch With Me</h2>
@@ -449,5 +498,6 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="quicktip.js"></script>
   </body>
 </html>
