@@ -2,9 +2,13 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import os
+print("Current Working Directory: ", os.getcwd())
+
 
 # Load the dataset
-df = pd.read_csv("dataset.csv")
+df = pd.read_csv("/Users/sarahgarlock/portfolio/projects/music_data/dataset.csv")
+
 
 # Handle missing values
 df = df.fillna({'artists': 'Unknown Artist', 
