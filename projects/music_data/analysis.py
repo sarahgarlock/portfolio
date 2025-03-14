@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load the dataset
-df = pd.read_csv("data/dataset.csv")
+df = pd.read_csv("dataset.csv")
 
 # Handle missing values
 df = df.fillna({'artists': 'Unknown Artist', 
