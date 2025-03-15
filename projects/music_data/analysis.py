@@ -7,7 +7,7 @@ print("Current Working Directory: ", os.getcwd())
 
 
 # Load the dataset
-df = pd.read_csv("data/dataset.csv")
+df = pd.read_csv("/mount/src/portfolio/projects/music_data/data/dataset.csv")
 
 
 # Handle missing values
