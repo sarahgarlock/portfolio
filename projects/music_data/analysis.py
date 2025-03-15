@@ -10,7 +10,7 @@ print("Files in directory:", os.listdir("projects/music_data/data"))
 df = pd.read_csv("projects/music_data/data/dataset.csv")  # Adjust based on output
 
 # Load the dataset
-pandas.read_csv("/mount/src/portfolio/projects/music_data/data/dataset.csv")
+pd.read_csv("/mount/src/portfolio/projects/music_data/data/dataset.csv")
 
 
 # Handle missing values
