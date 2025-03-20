@@ -5,8 +5,7 @@ import seaborn as sns
 import os
 
 
-df = pd.read_csv('dataset.csv')  # Adjust based on output
-
+df = pd.read_csv('data/dataset.csv')
 
 
 # Handle missing values
