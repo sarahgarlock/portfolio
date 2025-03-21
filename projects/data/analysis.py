@@ -3,13 +3,27 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
-import os
+import requests
+from io import StringIO
 
 # --- Data Loading ---
-# Dynamically find the CSV path relative to the script
-current_dir = os.path.dirname(os.path.abspath(__file__))
-csv_path = os.path.join(current_dir, 'dataset.csv')
-df = pd.read_csv(csv_path)
+def load_data():
+    url = 'https://raw.githubusercontent.com/sarahgarlock/portfolio/main/projects/data/dataset.csv'  # Use the raw URL
+    response = requests.get(url)
+    if response.status_code == 200:
+        return pd.read_csv(StringIO(response.text))
+    else:
+        st.error("Failed to load data from GitHub.")
+        return None
+
+# Load the data
+df = load_data()
+
+if df is not None:
+    # Continue your visualizations!
+    st.write("Data loaded successfully!")
+else:
+    st.stop()  # Stop execution if data fails to load
 
 # Fill missing values in key columns to avoid issues during analysis
 df = df.fillna({
