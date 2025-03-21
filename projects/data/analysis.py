@@ -33,7 +33,7 @@ df = df.fillna({
 })
 
 # --- Streamlit App Layout ---
-st.title("🎧 Spotify Popularity Analysis")
+st.title("🎧 Spotify Popularity Analysis - March 2025")
 st.write("Explore the most popular artists and track trends!")
 
 # --- Top 10 Artists by Average Popularity (Bar Plot) ---
